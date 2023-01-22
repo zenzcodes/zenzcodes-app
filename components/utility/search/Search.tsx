@@ -1,10 +1,8 @@
 import { useState } from 'react';
 
-export interface ISearch {
-  sampleTextProp: string;
-}
+export interface ISearch {}
 
-const Search: React.FC<ISearch> = ({ sampleTextProp }) => {
+const Search: React.FC<ISearch> = () => {
   const [searchTerm, setSearchTerm] = useState<string>();
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
